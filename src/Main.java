@@ -12,7 +12,7 @@ public class Main {
 
         //inform user which unchosen door has no car
         //ask user if they want to stick to their door or switch doors
-        System.out.println("Door " + noCarDoor[0] + " does not have a car. Would you like to stick with Door " + chosenDoor[0] + " or switch to Door " + switchDoor[0] + "?");
+        System.out.println("I have decided to let you know that Door " + noCarDoor[0] + " does not have a car. Would you like to stick with Door " + chosenDoor[0] + " or switch to Door " + switchDoor[0] + "?");
 
         //user input
         while(!stickOrSwitch.equals(chosenDoor[0]) && !stickOrSwitch.equals(switchDoor[0])) {
@@ -98,7 +98,9 @@ public class Main {
         while (three == two || three == one);
 
         //ask user for which door they would like to choose
-        System.out.println("Which door would you like to choose (1, 2, 3)?");
+        System.out.println("There are three doors: Door 1, Door 2, and Door 3.");
+        System.out.println("Behind one of the doors is a brand new car of your choice. Behind the other two doors are goats.");
+        System.out.println("Which door would you like to choose (1, 2, or 3)?");
 
         //user input
         while (!choice.equals("1") && !choice.equals("2") && !choice.equals("3")) {
