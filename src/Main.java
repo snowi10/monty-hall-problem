@@ -10,7 +10,7 @@ public class Main {
         String win = "\nCongratulations, you won a car!";
         String stickOrSwitch = "";
 
-        //inform user which unchosen door has a goat
+        //inform user which unchosen door has no car
         //ask user if they want to stick to their door or switch doors
         System.out.println("Door " + noCarDoor[0] + " does not have a car. Would you like to stick with Door " + chosenDoor[0] + " or switch to Door " + switchDoor[0] + "?");
 
@@ -57,6 +57,7 @@ public class Main {
         else if(unchosenDoor1[1].equals("car")) {
             StickOrSwitch(chosenDoor, unChosenDoor2, unchosenDoor1);
         }
+        //if the user chooses the door without the car, scenario 2
         else if(unChosenDoor2[1].equals("car")) {
             StickOrSwitch(chosenDoor, unchosenDoor1, unChosenDoor2);
         }
@@ -112,10 +113,12 @@ public class Main {
                 DoorOutcome(doorOne, doorTwo, doorThree);
             break;
 
+            //user chooses door 2
             case "2":
                 DoorOutcome(doorTwo, doorOne, doorThree);
             break;
 
+            //user chooses door 3
             case "3":
                 DoorOutcome(doorThree, doorOne, doorTwo);
             break;
